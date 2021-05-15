@@ -37,6 +37,16 @@
       display: grid;
       grid-gap: 20px;
       border: 10px solid var(--yellow);
+
+      /* No need to tell how many columns we want,
+      auto-fill will figure it out based on content. */
+      grid-template-columns: repeat(auto-fill, 150px);
+
+      /* No need to tell how many columns we want,
+      auto-fit will figure it out based on content.
+      It differs from auto-fill because it ends the grid
+      right then and there. */
+      grid-template-columns: repeat(auto-fit, 150px);
     }
   </style>
 </body>
