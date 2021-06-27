@@ -20,7 +20,11 @@
   </div>
 
   <style>
+    /* Prefer flexbox in this case because if one of our button changes (is removed) we are basically screwed :/ */
     .controls {
+      display: grid;
+      grid-template-columns: repeat(3, auto) 1fr repeat(2, auto);
+      align-items: center;
       margin: 200px 0;
     }
 
